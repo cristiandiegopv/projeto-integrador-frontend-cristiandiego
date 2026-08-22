@@ -6,11 +6,16 @@
     <title>Amanda Janine | Nutricionista</title>
 </head>
 <body> 
+
+<header>
     <h1>Amanda Janine Nutricionista</h1>
     <p>Bem-vindo à minha página! Sou nutricionista e estou aqui para te ajudar a alcançar seus objetivos de saúde.</p>
 
     <a href="sobre.html">Saiba mais sobre mim</a>
+</header>
 
+<main>
+<section>
     <h2>Áreas de atuação</h2>
     <ul>
         <li>Nutrição clínica</li>
@@ -18,12 +23,15 @@
         <li>Reeducação alimentar</li>
         <li>Nutrição para gestantes</li>
     </ul>
+</section>
 
+<section>
     <h2>Planos oferecidos</h2>
+    <h3>Planos presenciais</h3>
     <table>
         <thead>
             <tr>
-                <th>Planos presenciais</th>
+                <th>Plano</th>
                 <th>Duração</th>
                 <th>Descrição</th>
                 <th>Preço</th>
@@ -49,12 +57,18 @@
                 <td>R$ 900,00</td>
             </tr>
         </tbody>
+    </table>
+
+        <h3>Planos online</h3>
+    <table>
+        <thead>
         <tr>
-            <th>Planos online</th>
+            <th>Plano</th>
             <th>Duração</th>
             <th>Descrição</th>
             <th>Preço</th>
         </tr>
+        </thead>
         <tbody>
             <tr>
                 <td>Plano Raiz</td>
@@ -76,12 +90,47 @@
             </tr>
         </tbody>
     </table>
+</section>
 
+<section>
     <h2>Saiba mais</h2>
-    <p>Confira um guia de alimentação popular, criado pelo Ministério da Saúde: <a href="https://www.gov.br/saude/pt-br/assuntos/saude-brasil/publicacoes-para-promocao-a-saude/guia_alimentar_populacao_brasileira_2ed.pdf" target="_blank">Ministério da Saúde</a></p>
+    <p>Confira um guia de alimentação popular, criado pelo Ministério da Saúde: <a href="https://www.gov.br/saude/pt-br/assuntos/saude-brasil/publicacoes-para-promocao-a-saude/guia_alimentar_populacao_brasileira_2ed.pdf" target="_blank" rel="noopener noreferrer">Ministério da Saúde</a></p>
+</section>
 
+<section>
     <h2>Foto</h2>
     <img src="assets/images/amanda.jpg" alt="Amanda Janine no consultório" width="300">
+</section>
+
+<section>
+    <h2>Entre em contato</h2>
+    <form>
+        <fieldset>
+            <legend>Fale comigo</legend>
+
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" required minlength="3">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone (WhatsApp):</label>
+            <input type="tel" id="telefone" name="telefone" pattern="[0-9]{10,11}">
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem"></textarea>
+
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+</section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Amanda Janine Nutricionista. Todos os direitos reservados.</p>
+</footer>
+
 </body>
+</html>
 
 
