@@ -94,6 +94,17 @@
 
 <section>
     <h2>Saiba mais</h2>
+
+    <!-- preload="auto" escolhido porque o vídeo já inicia automaticamente (autoplay + loop) assim que a página carrega,
+      funcionando como um banner visual contínuo de fundo. O vídeo é silencioso (muted) e o 
+      visitante pode pausar a qualquer momento através dos controles.
+     -->
+
+    <video autoplay controls loop muted preload="auto" poster="assets/images/posterfoodvideo.png" width="600">
+        <source src="assets/videos/foodprojetointegrador.webm" type="video/webm">
+        <source src="assets/videos/foodprojetointegrador.mp4" type="video/mp4">
+        Seu navegador não suporta a reprodução de vídeo.
+    </video>
     <p>Confira um guia de alimentação popular, criado pelo Ministério da Saúde: <a href="https://www.gov.br/saude/pt-br/assuntos/saude-brasil/publicacoes-para-promocao-a-saude/guia_alimentar_populacao_brasileira_2ed.pdf" target="_blank" rel="noopener noreferrer">Ministério da Saúde</a></p>
 </section>
 
