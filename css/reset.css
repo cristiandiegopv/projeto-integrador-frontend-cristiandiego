@@ -1,0 +1,17 @@
+/*
+  Aplicamos box-sizing: border-box; a todos os elementos, (o * seleciona tudo), incluindo pseudo-elementos ::before e ::after, 
+  para que largura e altura definidas já incluam padding e a border, evitando que a caixa do elemento fique maior do que o esperado.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 
+    Remove marcadores padrão de listas, já que vamos estilizar as listas de acordo com o design do site.
+*/
+ul {
+  margin: 0;
+  padding: 0;
+}
