@@ -13,11 +13,19 @@
     <h1>Amanda Janine Nutricionista</h1>
     <p>Bem-vindo à minha página! Sou nutricionista e estou aqui para te ajudar a alcançar seus objetivos de saúde.</p>
 
-    <a href="sobre.html">Saiba mais sobre mim</a>
+    <nav aria-label="Menu principal">
+        <ul class="menu">
+            <li><a href="#areas">Áreas de atuação</a></li>
+            <li><a href="#planos">Planos</a></li>
+            <li><a href="#saiba-mais">Saiba mais</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="sobre.html">Sobre mim</a></li>
+        </ul>
+    </nav>
 </header>
 
 <main>
-<section>
+<section id="areas">
     <h2>Áreas de atuação</h2>
     <ul>
         <li>Nutrição clínica</li>
@@ -27,7 +35,7 @@
     </ul>
 </section>
 
-<section class="card">
+<section id="planos" class="card">
     <h2>Planos oferecidos</h2>
     <h3>Planos presenciais</h3>
     <table>
@@ -94,7 +102,7 @@
     </table>
 </section>
 
-<section>
+<section id="saiba-mais">
     <h2>Saiba mais</h2>
 
     <!-- preload="auto" escolhido porque o vídeo já inicia automaticamente (autoplay + loop) assim que a página carrega,
@@ -115,7 +123,7 @@
     <img src="assets/images/amanda.jpg" alt="Amanda Janine no consultório" width="300">
 </section>
 
-<section>
+<section id="contato">
     <h2>Entre em contato</h2>
     <form>
         <fieldset>
