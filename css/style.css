@@ -123,3 +123,56 @@ footer p {
     font-size: 0.875rem;
     color: #777;
 }
+
+/* ===== Navbar (Flexbox) ===== */
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: var(--espacamento-padrao);
+}
+
+.menu a:link,
+.menu a:visited {
+    color: var(--cor-texto-claro);
+    text-decoration: none;
+}
+
+.menu a:hover,
+.menu a:focus-visible {
+    color: var(--cor-secundaria);
+    text-decoration: underline;
+}
+
+/* ===== Grande de áreas de atuação ===== */
+.grade-areas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--espacamento-padrao);
+}
+
+.grade-areas li {
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-claro);
+    padding: var(--espacamento-padrao);
+    border-radius: var(--raio-borda);
+    transition: transform 0.2s;
+}
+
+/*
+    Pseudo-classe estrutural :first-child, usada de forma intencional para destacar a primeira área de atuação com cor diferente.
+    */
+.grade-areas li:first-child {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    font-weight: bold;
+}
+
+/*
+    Animação de hover com transform em vez de margin, width ou height. O transform não altera o espaço que o elemento ocupa na página, então não
+    força o navegador a recalcular o layout (reflow) dos elementos vizinhos. O efeito fica mais fluido e mais barato para o navegador.
+*/
+.grade-areas li:hover {
+    transform: translaterY(-4px);
+}
