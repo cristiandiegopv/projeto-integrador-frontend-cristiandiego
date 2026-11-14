@@ -174,5 +174,37 @@ footer p {
     força o navegador a recalcular o layout (reflow) dos elementos vizinhos. O efeito fica mais fluido e mais barato para o navegador.
 */
 .grade-areas li:hover {
-    transform: translaterY(-4px);
+    transform: translateY(-4px);
+}
+
+/* ===== Resultado da análise (classes aplicadas pelo JavaScript) ===== */
+.plano-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: var(--raio-borda);
+    padding: var(--espacamento-padrao);
+    margin-bottom: var(--espacamento-padrao);
+}
+
+.plano-item h3,
+.plano-item p {
+    margin: 0 0 0.5rem;
+}
+
+.faixa-economico {
+    border-left: 8px solid var(--cor-secundaria);
+}
+
+.faixa-intermediario {
+    border-left: 8px solid #f4a261;
+}
+
+.faixa-premium {
+    border-left: 8px solid var(--cor-primaria);
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-claro);
+}
+
+.resumo {
+    font-weight: bold;
 }
